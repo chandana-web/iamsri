@@ -57,21 +57,21 @@ export default function Hero() {
   {/* ✅ Social Buttons */}
 <div className="hero-buttons">
   
-  <a href="https://www.linkedin.com/in/sri-chandana-b1a519188" target="_blank" className="hero-btn">
+  <a href="https://www.linkedin.com/in/sri-chandana-b1a519188" rel="noopener noreferrer" target="_blank" className="hero-btn">
     <span className="btn-icon">
       <i className="fa-brands fa-linkedin-in"></i>
     </span>
     Linkedin
   </a>
 
-  <a href="https://github.com/chandana-web" target="_blank" className="hero-btn">
+  <a href="https://github.com/chandana-web" rel="noopener noreferrer" target="_blank" className="hero-btn">
     <span className="btn-icon">
       <i className="fa-brands fa-github"></i>
     </span>
     GitHub
   </a>
 
-  <a href={resume} download={resume} target="_blank" className="hero-btn">
+  <a href={resume} download={resume} rel="noopener noreferrer" target="_blank" className="hero-btn">
     <span className="btn-icon">
       <i className="fa-solid fa-download"></i>
     </span>

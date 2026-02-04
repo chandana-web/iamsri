@@ -1,13 +1,13 @@
 import "./Contact.css";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
+
 import { useRef, useState } from "react";
 
 export default function Contact() {
   const formRef = useRef();
 
   // ✅ Popup State
-  const [popup, setPopup] = useState(false);
+
 
   // ✅ Send Email Function
 const sendEmail = (e) => {
@@ -85,12 +85,7 @@ const sendEmail = (e) => {
         </button>
       </motion.form>
 
-      {/* ✅ Popup Message */}
-      {popup && (
-        <div className="popup">
-          ✅ Message Sent Successfully!
-        </div>
-      )}
+      
     </section>
   );
 }
