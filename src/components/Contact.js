@@ -1,7 +1,7 @@
 import "./Contact.css";
 import { motion } from "framer-motion";
 
-import { useRef, useState } from "react";
+import { useRef,} from "react";
 
 export default function Contact() {
   const formRef = useRef();
