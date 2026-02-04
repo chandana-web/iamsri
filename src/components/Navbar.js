@@ -69,7 +69,7 @@ export default function Navbar() {
         </Typography>
 
         {/* Nav Links */}
-        <Box sx={{ display: "flex", gap: { xs: "15px", md: "30px" }, flexWrap: "wrap", justifyContent: "center" }}>
+        <Box sx={{ display: "flex", gap: { xs: "14px", md: "30px" }, flexWrap: "wrap", justifyContent: "center" }}>
           {navItems.map((item) => (
             <Button
               key={item.id}

@@ -54,7 +54,16 @@
 @media (max-width: 768px){
   .skills-title {
   font-size: 45px;
-  
+  margin-bottom: 30px;
+}
+
+.skills-section {
+  padding: 1px 25px;
+}
+
+.skill-box{
+  font-size: 16px;
+  padding: 14px 20px;
 }
 
 }

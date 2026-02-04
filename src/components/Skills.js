@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Skills() {
   const skills = [
     "JavaScript",
-    "React",
+    "React.js",
     "Next.js",
     "Node.js",
     "MongoDB",

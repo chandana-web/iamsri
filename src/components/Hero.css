@@ -178,16 +178,16 @@
   .hero-glass {
     width: 100%;
     height: auto; /* ✅ Auto expand */
-    padding: 25px;
+    padding: 15px;
   }
 
   /* Text Adjustments */
   .hero-name {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .hero-role {
-    font-size: 17px;
+    font-size: 15px;
     
   }
 
@@ -206,7 +206,8 @@
   }
 
   .hero-btn {
-    width: 40%;
+    width: 39%;
     justify-content: space-between;
+    font-size: 12px;
   }
 }
