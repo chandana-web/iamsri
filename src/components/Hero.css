@@ -1,0 +1,212 @@
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 80px;
+}
+
+/* ✅ Left Photo Section */
+.hero-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+
+/* ✅ Photo Circle */
+.photo-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+
+  border: 1px solid rgba(0, 255, 153, 0.9);
+  
+
+  box-shadow: 0 0 15px rgba(0, 255, 153, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ✅ Right Content Section */
+.hero-right {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ✅ Glass Box ONLY for Right Side */
+.hero-glass {
+  width: 80%;
+  height: 220px;
+
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 25px;
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  padding: 40px;
+  
+}
+
+/* ✅ Right Hero Text Styling */
+
+.hero-intro {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1px;
+  margin-top:0 ;
+}
+
+.hero-name {
+  font-size: 55px;
+  font-weight: 800;
+  color: white;
+  margin: 0;
+}
+
+.hero-role {
+  margin-top: 1px;
+  font-size: 26px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ✅ Typing Highlight */
+.typing {
+  color: #00ff99;
+  font-weight: 600;
+}
+.hero-desc {
+  margin-top: 0px;
+  font-size: 17px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 500px;
+}
+
+/* ✅ Button Row */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+/* ✅ Capsule Button */
+.hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 8px 17px 8px 7px;
+  border-radius: 50px;
+
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* ✅ Icon Circle */
+.btn-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 18px;
+}
+
+/* ✅ Hover Effects */
+.hero-btn:hover {
+  transform: translateY(-4px);
+  color: #00ff99;
+  box-shadow: 0 0 15px rgba(0, 255, 153, 0.4);
+}
+
+/* ✅ Mobile Responsive Hero */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column; /* ✅ Stack items */
+    padding: 40px 20px;
+    text-align: center;
+    justify-content: space-evenly;
+    
+  }
+
+  /* Photo comes on top */
+  .hero-left {
+    flex: none;
+  }
+
+  .photo-circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* Content box comes below */
+  .hero-right {
+    flex: none;
+    width: 100%;
+  }
+
+  .hero-glass {
+    width: 100%;
+    height: auto; /* ✅ Auto expand */
+    padding: 25px;
+  }
+
+  /* Text Adjustments */
+  .hero-name {
+    font-size: 35px;
+  }
+
+  .hero-role {
+    font-size: 17px;
+    
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  /* Buttons Responsive */
+  .hero-buttons {
+    flex-wrap: wrap; /* ✅ Stack buttons */
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .hero-btn {
+    width: 40%;
+    justify-content: space-between;
+  }
+}

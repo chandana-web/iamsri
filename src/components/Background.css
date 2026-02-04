@@ -1,0 +1,80 @@
+/* Full Page Background */
+#background {
+  min-height: 100vh;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  position: relative;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+   
+}
+
+/* Floating Blobs */
+.blob {
+  position: fixed;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.8;
+  animation: float 6s infinite ease-in-out;
+}
+
+/* Green Blob */
+.green {
+  background: #00ff99;
+  top: 20%;
+  left: 15%;
+}
+
+/* Purple Blob */
+.purple {
+  background: #a855f7;
+  bottom: 15%;
+  right: 15%;
+  animation-delay: 3s;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(200px, -150px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glass Box */
+.glass-box {
+  width: 70%;
+  height: 250px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
